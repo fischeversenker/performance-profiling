@@ -6,11 +6,11 @@ buttonElement.addEventListener('click', () => {
 
   performance.mark('heavyTask:start');
   const result = heavyTask();
-  performance.mark('heavyTask:stop');
+  performance.mark('heavyTask:end');
 
   const measure = performance.measure('heavyTask', {
     start: 'heavyTask:start',
-    end: 'heavyTask:stop',
+    end: 'heavyTask:end',
   });
   console.log(measure.duration);
 
