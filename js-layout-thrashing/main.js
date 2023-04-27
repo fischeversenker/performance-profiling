@@ -10,7 +10,7 @@ buttonElement.addEventListener('click', () => {
 function heavyTask() {
   const victim = document.querySelector('h1');
 
-  for (let i = 0; i < 100000; i++) {
+  for (let i = 0; i < 10000; i++) {
     victim.style.fontSize = '2em';
     const a = victim.offsetLeft;
     victim.style.fontSize = 'revert';

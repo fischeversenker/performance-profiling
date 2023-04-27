@@ -4,4 +4,4 @@ Frontend:
 npx http-server slow-backend
 
 Backend:
-npx json-server slow-backend/db.json --delay 700
+npx json-server slow-backend/db.json --delay 1000
